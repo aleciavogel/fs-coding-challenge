@@ -63,7 +63,7 @@ Using this information, create the following UI. The gray boxes are placeholders
 ![reference.png](https://github.com/regrow-coding-challenge/FS-coding-challenge/blob/main/public/region_data_ui.png)
 
 Requirements:
-* Please fork this repo into a private repo and share it with the github users listed by your recruiter. 
+* Please fork this repo into a private repo and, once finished, add the github users listed by your recruiter as amins. 
 * Use Typescript and React.
 * Regions should be shown in alphabetical order.
 * Cover crop data should be displayed as the percentage of acres where cover crops have been planted divided by the total acreage for that region.
