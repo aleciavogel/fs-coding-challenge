@@ -1,5 +1,5 @@
 export interface RegionResponse {
-  data: [number, string, number][]
+  data: [number, string, number | null][]
 }
 
 export interface CoverCropResponse {
@@ -15,11 +15,6 @@ interface RegionId {
   region_id: number
   /** name of the region */
   region_name: string
-}
-
-export interface RegionData extends RegionId {
-  /** total acreage of agricultural land in the region */
-  total_field_acreage: number
 }
 
 export interface CoverCropData {
@@ -39,9 +34,9 @@ export interface GreenhouseGasData {
 /** Response from the API */
 export interface RowData extends RegionId {
   /** cover_crop_acres / total_field_acreage */
-  cover_crop_adoption: number
+  cover_crop_adoption?: number
   /** (ghg_kg * 0.001) / total_field_acreage */
-  ghg_ton_per_acre: number
+  ghg_ton_per_acre?: number
 }
 
 /** Table data, indexed by region id */

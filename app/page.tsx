@@ -20,7 +20,16 @@ export default async function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <DataTable columns={columns} data={data} />
+      <DataTable
+        columns={columns}
+        data={data}
+        initialSorting={[
+          {
+            id: 'region_name',
+            desc: false, // sort by name in descending order by default
+          },
+        ]}
+      />
     </main>
   )
 }
