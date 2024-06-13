@@ -36,11 +36,6 @@ Assumptions I made include:
 - The unit for Greenhouse Gas data being MTCO2e (metric tons of CO2 equivalent) based off of a couple of Google searches
   I did. I'm not 100% sure if this is correct, but it seemed to be the most common unit of measurement for GHG emissions.
 
-Also, please don't be worried by the whole 7 hour time span that you might notice across my git commits. 
-I had a lot of interruptions this morning and had to take some breaks to deal with them. I reckon I spent around 2 to 2.5
-hours on this project, including writing my notes and getting Netlify set-up.
-
-
 Thank you for your consideration and I hope you enjoy reviewing my submission!
 
 ### Setup & Installation
