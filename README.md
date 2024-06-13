@@ -1,4 +1,5 @@
 # FS-coding-challenge
+
 We would like you to build a table that displays information about cover crop adoption and greenhouse gas (GHG) emissions for a list of regions. In the `public` folder you will see three different json files that represent the return value of three different GET API endpoints.
 
 ```
