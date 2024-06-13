@@ -1,5 +1,59 @@
 # FS-coding-challenge
 
+## Notes from Alecia
+
+I decided to use NextJS for this project because it's a framework that I'm familiar with. I hit a small snag where I got
+confused about how the server-side `fetch` polyfill works (it turns out, you need to use an absolute URL or it won't work
+and I've only ever fetched from third-party APIs in the past). This initially led me down a rabbit hole of trying to write 
+middleware to support fetching files from the `public` directory. Thankfully, I eventually got it working by creating an 
+`.env` file to allow me to define a base path in case this project were to ever be hosted somewhere.
+
+Speaking of hosting, you can view a live version of this exercise hosted on Netlify: 
+[TODO: INSERT NETLIFY URL] (password is `regrow`)
+
+I used a combination of TailwindCSS, React Table, and shadcn components. I enjoy the
+flexibility of these libraries and frameworks since they allow me to cut down on the amount of CSS and boilerplate
+code that I would otherwise have to write. This way, I could focus the majority of my time (outside of the `fetch` issue)
+on the logic and data management component of the project.
+
+I had time to write some unit tests, which you can find in the `./lib/__tests__` directory. I used Jest and React Testing 
+Library. If I had time, I would've also liked to add some E2E tests with Cypress for some added peace of mind. This
+project felt small enough that adding visual regression testing with Storybook/Chromatic would've potentially been overkill.
+
+In terms of extra bells and whistles, I added:
+
+- A tool tip that explains why certain rows are labelled `N/A` (hover over the `N/A` text to activate it)
+- A circular progress bar that shows the percentage of cover crop adoption for each region
+- Buttons and icons to allow users to sort the table by different columns
+- A search bar that allows users to filter the table by region name
+
+If I had more time, I would've liked to add:
+
+- A button that allows you to toggle between metric tonnes and kilograms for the GHG data
+- Ability to show and hide columns
+- Better search capabilities (fuzzy search, etc.)
+
+Assumptions I made include:
+
+- The unit for Greenhouse Gas data being MTCO2e (metric tons of CO2 equivalent) based off of a couple of Google searches
+  I did. I'm not 100% sure if this is correct, but it seemed to be the most common unit of measurement for GHG emissions.
+
+Thank you for your consideration and I hope you enjoy reviewing my submission!
+
+### Setup & Installation
+
+I'm using Node v21.7.3 and Yarn v1.22.22 for this project. If you wish you install this project on your machine, you can do so by
+running the following command:
+
+```bash
+yarn && yarn dev
+```
+
+From there, you'll be able to open `http://localhost:3000` in order to view the final product. Please don't hesitate to
+get in touch with me if you have any issues getting the project to run.
+
+## Original Instructions
+
 We would like you to build a table that displays information about cover crop adoption and greenhouse gas (GHG) emissions for a list of regions. In the `public` folder you will see three different json files that represent the return value of three different GET API endpoints.
 
 ```
