@@ -34,7 +34,7 @@ If I had more time, I would've liked to add:
 - Ability to show and hide columns
 - Better search capabilities (fuzzy search, etc.)
 - Mobile friendliness
-- Visual regression testing
+- Visual regression and E2E testing
 
 Assumptions I made include:
 
