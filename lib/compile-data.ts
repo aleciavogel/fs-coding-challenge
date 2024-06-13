@@ -14,7 +14,9 @@ interface CompileDataArgs {
   ghg: GreenhouseGasResponse
 }
 
-const generate_cover_crop_map = ({ data }: CoverCropResponse): Map<number, CoverCropData> => {
+export const generate_cover_crop_map = ({
+  data,
+}: CoverCropResponse): Map<number, CoverCropData> => {
   const map = new Map<number, CoverCropData>()
   data.forEach(([region_id, cover_crop_acres]) => {
     map.set(region_id, { region_id, cover_crop_acres })
@@ -22,7 +24,7 @@ const generate_cover_crop_map = ({ data }: CoverCropResponse): Map<number, Cover
   return map
 }
 
-const generate_emissions_map = ({
+export const generate_emissions_map = ({
   data,
 }: GreenhouseGasResponse): Map<number, GreenhouseGasData> => {
   const map = new Map<number, GreenhouseGasData>()

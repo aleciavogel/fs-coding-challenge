@@ -4,10 +4,7 @@ import { CircularProgress } from '@nextui-org/progress'
 import { ColumnDef } from '@tanstack/react-table'
 
 import { RowData } from '@/types'
-import { Button } from '@/components/ui/button'
-import SortIndicator from '@/components/sort-indicator'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
-import { cn } from '@/lib/utils'
 import SortableTableHeader from '@/components/sortable-table-header'
 
 const NotApplicableCell = () => (

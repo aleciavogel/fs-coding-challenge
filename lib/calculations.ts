@@ -1,5 +1,5 @@
 /** Conversion factor from kg to metric ton */
-const KG_TO_METRIC_TON = 0.001
+export const KG_TO_METRIC_TON = 0.001
 
 /** Convert kg to metric ton */
 export const convert_kg_to_metric_ton = (kg: number) => kg * KG_TO_METRIC_TON
