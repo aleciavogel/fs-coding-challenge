@@ -9,7 +9,7 @@ middleware to support fetching files from the `public` directory. Thankfully, I 
 `.env` file to allow me to define a base path in case this project were to ever be hosted somewhere.
 
 Speaking of hosting, you can view a live version of this exercise hosted on Netlify: 
-[TODO: INSERT NETLIFY URL] (password is `regrow`)
+[https://av-crop-cover.netlify.app](https://av-crop-cover.netlify.app) (password is `regrow`)
 
 I used a combination of TailwindCSS, React Table, and shadcn components. I enjoy the
 flexibility of these libraries and frameworks since they allow me to cut down on the amount of CSS and boilerplate
