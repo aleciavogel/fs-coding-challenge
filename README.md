@@ -54,7 +54,7 @@ yarn && yarn dev
 From there, you'll be able to open `http://localhost:3000` in order to view the final product. Please don't hesitate to
 get in touch with me if you have any issues getting the project to run.
 
-## Original Instructions
+# Original Instructions
 
 We would like you to build a table that displays information about cover crop adoption and greenhouse gas (GHG) emissions for a list of regions. In the `public` folder you will see three different json files that represent the return value of three different GET API endpoints.
 
