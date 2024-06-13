@@ -819,6 +819,15 @@
   resolved "https://registry.yarnpkg.com/@nextui-org/shared-utils/-/shared-utils-2.0.5.tgz#f04072240f35b0a5748fe38b4ec1c285231d6074"
   integrity sha512-aFc/CUL8RVfBh0IotIpxkpKjyUPc/zJaMJd5pRCQA1kIpKLdSrlh3//MLYMaP/fo/NQtE3DPeXqfKhHRr1fkEw==
 
+"@nextui-org/spinner@^2.0.29":
+  version "2.0.29"
+  resolved "https://registry.yarnpkg.com/@nextui-org/spinner/-/spinner-2.0.29.tgz#66b59c6408c782e64ad5c0795ac6e83075cf126b"
+  integrity sha512-W9WXguTIQVbnCx5eus3DwJYX7mzDLK3xp6QRU/knmxm3HJjCvHlexw6TgXMEJfTcCl83Sh8CDYrUDSEhCivMWQ==
+  dependencies:
+    "@nextui-org/react-utils" "2.0.13"
+    "@nextui-org/shared-utils" "2.0.5"
+    "@nextui-org/system-rsc" "2.1.2"
+
 "@nextui-org/system-rsc@2.1.2":
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/@nextui-org/system-rsc/-/system-rsc-2.1.2.tgz#42b6568617018ec108cb60d22cb7bff96f6117b3"
