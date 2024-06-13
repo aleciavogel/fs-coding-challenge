@@ -2,20 +2,15 @@
 
 ## Notes from Alecia
 
-I decided to use NextJS for this project because it's a framework that I'm familiar with. I hit a small snag where I got
-confused about how the server-side `fetch` polyfill works (it turns out, you need to use an absolute URL or it won't work
-and I've only ever fetched from third-party APIs in the past). This initially led me down a rabbit hole of trying to write 
-middleware to support fetching files from the `public` directory. Thankfully, I eventually got it working by creating an 
-`.env` file to allow me to define a base path in case this project were to ever be hosted somewhere.
-
-Speaking of hosting, you can view a live version of this exercise hosted on Netlify: 
+I decided to use NextJS for this project because it's a framework that I'm familiar with. You can view a live version of
+the project at the following link:
 
 [https://av-crop-cover.netlify.app](https://av-crop-cover.netlify.app) (password is `regrow`)
 
 I used a combination of TailwindCSS, React Table, and shadcn components. I enjoy the
 flexibility of these libraries and frameworks since they allow me to cut down on the amount of CSS and boilerplate
-code that I would otherwise have to write. This way, I could focus the majority of my time (outside of the `fetch` issue)
-on the logic and data management component of the project.
+code that I would otherwise have to write. This way, I could focus the majority of my time on the logic and data
+management component of the project.
 
 I had time to write some unit tests, which you can find in the `./lib/__tests__` directory. I used Jest and React Testing 
 Library. If I had time, I would've also liked to add some E2E tests with Cypress for some added peace of mind. This
@@ -41,11 +36,16 @@ Assumptions I made include:
 - The unit for Greenhouse Gas data being MTCO2e (metric tons of CO2 equivalent) based off of a couple of Google searches
   I did. I'm not 100% sure if this is correct, but it seemed to be the most common unit of measurement for GHG emissions.
 
+Also, please don't be worried by the whole 7 hour time span that you might notice across my git commits. 
+I had a lot of interruptions this morning and had to take some breaks to deal with them. I reckon I spent around 2 to 2.5
+hours on this project, including writing my notes and getting Netlify set-up to work.
+
+
 Thank you for your consideration and I hope you enjoy reviewing my submission!
 
 ### Setup & Installation
 
-I'm using Node v21.7.3 and Yarn v1.22.22 for this project. If you wish you install this project on your machine, you can do so by
+I'm using Node v21.7.3 and Yarn v1.22.22 for this project. If you wish to install this project on your machine, you can do so by
 running the following command:
 
 ```bash
