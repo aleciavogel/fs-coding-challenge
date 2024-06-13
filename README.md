@@ -32,6 +32,8 @@ If I had more time, I would've liked to add:
 - A button that allows you to toggle between metric tonnes and kilograms for the GHG data
 - Ability to show and hide columns
 - Better search capabilities (fuzzy search, etc.)
+- Mobile friendliness
+- Visual regression testing
 
 Assumptions I made include:
 

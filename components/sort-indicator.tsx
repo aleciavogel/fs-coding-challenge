@@ -8,6 +8,9 @@ interface SortIndicatorProps {
   sortState: boolean | 'asc' | 'desc'
 }
 
+/**
+ * Displays an icon based on the sort state of a column
+ */
 const SortIndicator: FC<SortIndicatorProps> = ({ sortState }) => {
   if (sortState === 'asc')
     return (

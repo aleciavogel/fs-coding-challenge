@@ -12,6 +12,10 @@ interface SortIndicatorProps {
   column: Column<RowData>
 }
 
+/**
+ * A header cell that can be clicked to sort the table by the column in ascending or descending order
+ * (toggled on each click)
+ */
 const SortableTableHeader: FC<SortIndicatorProps> = ({ column, label }) => {
   const sortState = column.getIsSorted()
   const isSortActive = sortState === 'asc' || sortState === 'desc'
