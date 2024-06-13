@@ -6,7 +6,7 @@ import { RowData } from '@/types'
 
 export const columns: ColumnDef<RowData>[] = [
   {
-    accessorKey: 'region',
+    accessorKey: 'region_name',
     header: 'Region',
   },
   {

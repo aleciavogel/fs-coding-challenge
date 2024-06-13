@@ -6,13 +6,11 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-/** Fetches a JSON file from the public directory */
-export const fetch_json = async <T>(path: string): Promise<T> => {
-  const response = await fetch(path)
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ${path}`)
-  }
-
-  return (await response.json()) as Promise<T>
+/** Converts a response array to a map and indexes via the region_id */
+export const convert_response_to_map = <T extends { region_id: number }>(
+  response: T[],
+): Map<number, T> => {
+  const map = new Map<number, T>()
+  response.forEach((item) => map.set(item.region_id, item))
+  return map
 }
