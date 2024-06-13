@@ -38,7 +38,7 @@ Assumptions I made include:
 
 Also, please don't be worried by the whole 7 hour time span that you might notice across my git commits. 
 I had a lot of interruptions this morning and had to take some breaks to deal with them. I reckon I spent around 2 to 2.5
-hours on this project, including writing my notes and getting Netlify set-up to work.
+hours on this project, including writing my notes and getting Netlify set-up.
 
 
 Thank you for your consideration and I hope you enjoy reviewing my submission!
