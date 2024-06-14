@@ -52,7 +52,7 @@ export default function Home() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-24 pt-10 pb-24">
+    <main className="flex min-h-screen flex-col md:items-center px-6 md:px-24 pt-10 pb-24">
       <DataTable columns={columns} data={data} />
     </main>
   )
